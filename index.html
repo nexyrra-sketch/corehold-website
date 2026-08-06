@@ -9,19 +9,19 @@
 <meta name="author" content="Corehold">
 <meta name="geo.region" content="AE-DU">
 <meta name="geo.placename" content="Dubai">
-<link rel="canonical" href="https://corehold.studio/">
-<!-- NOTE: replace corehold.studio with your real domain everywhere in this file before launch -->
+<link rel="canonical" href="https://corehold.systems/">
+<!-- NOTE: replace corehold.systems with your real domain everywhere in this file before launch -->
 <meta property="og:title" content="Corehold — Custom Software &amp; AI Systems Studio, Dubai">
 <meta property="og:description" content="We replace the rented SaaS stack with custom software, AI, and automation your business owns outright. Intelligent systems studio in Dubai, working worldwide.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://corehold.studio/">
+<meta property="og:url" content="https://corehold.systems/">
 <meta property="og:site_name" content="Corehold">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://corehold.studio/og.png">
+<meta property="og:image" content="https://corehold.systems/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://corehold.studio/og.png">
+<meta name="twitter:image" content="https://corehold.systems/og.png">
 <meta name="twitter:title" content="Corehold — Custom Software &amp; AI Systems Studio, Dubai">
 <meta name="twitter:description" content="Intelligent infrastructure your business owns outright: custom software, AI systems, automation. Dubai, UAE — working worldwide.">
 <script type="application/ld+json">
@@ -30,12 +30,12 @@
   "@graph": [
     {
       "@type": "ProfessionalService",
-      "@id": "https://corehold.studio/#org",
+      "@id": "https://corehold.systems/#org",
       "name": "Corehold",
       "alternateName": "Corehold Studio",
       "description": "Intelligent systems studio building custom software, AI-powered systems, automation ecosystems, and business infrastructure that companies own outright — an alternative to rented SaaS stacks.",
-      "url": "https://corehold.studio/",
-      "email": "hello@corehold.studio",
+      "url": "https://corehold.systems/",
+      "email": "hello@corehold.systems",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Dubai",
@@ -47,10 +47,10 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://corehold.studio/#website",
-      "url": "https://corehold.studio/",
+      "@id": "https://corehold.systems/#website",
+      "url": "https://corehold.systems/",
       "name": "Corehold",
-      "publisher": { "@id": "https://corehold.studio/#org" }
+      "publisher": { "@id": "https://corehold.systems/#org" }
     },
     {
       "@type": "OfferCatalog",
@@ -703,7 +703,7 @@ em, .it{ font-family:var(--serif); font-style:italic; font-weight:400; }
       <a href="#auditor">Your Numbers</a>
       <a href="#method">Method</a>
       <a href="#ownership">Ownership</a>
-      <a href="field-notes.html">Field Notes</a>
+      <a href="/field-notes">Field Notes</a>
       <a class="nav-cta" href="#contact">Begin an audit</a>
       <button class="pal-btn" id="palOpen" type="button" aria-label="Open command palette" title="Command palette (Ctrl/Cmd+K)">⌘K</button>
     </nav>
@@ -1054,7 +1054,7 @@ em, .it{ font-family:var(--serif); font-style:italic; font-weight:400; }
     </div>
     <h2 class="sec-title" data-reveal>Tell us how your business runs. We'll show you what you could <em>own.</em></h2>
     <div class="contact-row" data-reveal>
-      <a class="contact-email serif" id="contactMail" href="mailto:hello@corehold.studio?subject=Corehold%20audit%20request">hello@corehold.studio</a>
+      <a class="contact-email serif" id="contactMail" href="mailto:hello@corehold.systems?subject=Corehold%20audit%20request">hello@corehold.systems</a>
       <div class="contact-meta mono">
         <span>Dubai, United Arab Emirates</span>
         <span>Working worldwide · GST (UTC+4)</span>
@@ -1071,7 +1071,7 @@ em, .it{ font-family:var(--serif); font-style:italic; font-weight:400; }
     </div>
     <div class="wrap footer-inner">
       <span class="brand-name" style="font-size:11px">C<svg class="oo" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" fill="none" stroke="#EAE7DE" stroke-width="3.4"/><rect x="14" y="14" width="11" height="11" fill="#E68A2E"/></svg>REHOLD</span>
-      <span class="mono"><a href="field-notes.html" style="color:inherit">Field Notes</a> · <a href="faq.html" style="color:inherit">FAQ</a></span>
+      <span class="mono"><a href="/field-notes" style="color:inherit">Field Notes</a> · <a href="/faq" style="color:inherit">FAQ</a></span>
       <span class="mono">Intelligent systems, owned outright</span>
       <span class="mono">© 2026 Corehold</span>
     </div>
@@ -1390,7 +1390,7 @@ if (chipsWrap) {
       const body = "Our current stack: " + (names.join(", ") || "(none selected)") +
         ".%0AProjected spend over " + yearsEl.value + " years: " + encodeURIComponent(fmt(t)) +
         ".%0AWe'd like to see what we could own instead.";
-      mail.href = "mailto:hello@corehold.studio?subject=" + encodeURIComponent("Audit request — our numbers") + "&body=" + body.replace(/ /g, "%20");
+      mail.href = "mailto:hello@corehold.systems?subject=" + encodeURIComponent("Audit request — our numbers") + "&body=" + body.replace(/ /g, "%20");
     }
   }
   chips.forEach(c => c.addEventListener("click", () => {
@@ -1801,8 +1801,8 @@ if (pal) {
     { cmd: "ownership", d: "what you hold",               fn: () => go("ownership") },
     { cmd: "beliefs",   d: "operating principles",        fn: () => go("principles") },
     { cmd: "contact",   d: "begin an audit",              fn: () => go("contact") },
-    { cmd: "notes",     d: "field notes — our thinking",  fn: () => { location.href = "field-notes.html"; } },
-    { cmd: "faq",       d: "direct questions, answered",  fn: () => { location.href = "faq.html"; } },
+    { cmd: "notes",     d: "field notes — our thinking",  fn: () => { location.href = "/field-notes"; } },
+    { cmd: "faq",       d: "direct questions, answered",  fn: () => { location.href = "/faq"; } },
     { cmd: "status",    d: "system telemetry",            fn: () => {
         const t = window.__telemetry || {};
         print("<span class='dim'>─ SYSTEM/001 STATUS ─</span>");

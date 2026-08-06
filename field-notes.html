@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Notes — Corehold | Thinking on owned software, AI &amp; business systems</title>
+<meta name="description" content="Field Notes from Corehold, the Dubai intelligent systems studio: honest writing on the real cost of SaaS, custom software vs subscriptions, business automation, and when AI actually pays off.">
+<link rel="canonical" href="https://corehold.studio/field-notes.html">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Field Notes — Corehold">
+<meta property="og:description" content="Honest writing on owned software, AI, and the real cost of the rented stack.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://corehold.studio/field-notes.html">
+<meta property="og:image" content="https://corehold.studio/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%23EAE7DE' stroke-width='2.5'/%3E%3Crect x='14' y='14' width='11' height='11' fill='%23E68A2E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Field Notes — Corehold",
+  "url": "https://corehold.studio/field-notes.html",
+  "publisher": { "@type": "Organization", "name": "Corehold", "url": "https://corehold.studio/" }
+}
+</script>
+<style>
+:root{--ink:#0a0b0e;--ink-2:#0d0f13;--line:rgba(234,231,222,.09);--line-2:rgba(234,231,222,.16);--bone:#eae7de;--muted:#97948a;--dim:#5f5d55;--ember:#e68a2e;--ember-hi:#f4b65c;--serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;--mono:"IBM Plex Mono",monospace;--ease:cubic-bezier(.22,1,.36,1)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:16px;line-height:1.65;font-weight:450;-webkit-font-smoothing:antialiased}
+::selection{background:var(--ember);color:var(--ink)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(20px,4.5vw,60px)}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.nav{position:sticky;top:0;z-index:50;background:rgba(10,11,14,.8);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand-name{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.32em;display:inline-flex;align-items:center}
+.brand-name .oo{width:.82em;height:.82em;margin:0 .32em 0 .05em}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .25s}
+.nav-links a:hover{color:var(--bone)}
+.nav-links .cta{border:1px solid var(--line-2);padding:9px 16px;color:var(--bone)}
+.nav-links .cta:hover{border-color:var(--ember);color:var(--ember-hi)}
+.head{padding:clamp(70px,10vh,120px) 0 clamp(40px,6vh,60px)}
+.eyebrow{display:flex;align-items:center;gap:14px;color:var(--muted);margin-bottom:26px}
+.eyebrow .tick{width:34px;height:1px;background:var(--ember)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.01em;max-width:16ch}
+h1 em{font-style:italic;color:var(--ember-hi)}
+.lede{color:var(--muted);font-size:17px;max-width:56ch;margin-top:24px}
+.cards{border-top:1px solid var(--line-2);margin:clamp(30px,5vh,50px) 0 100px}
+.card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:clamp(18px,3vw,50px);padding:clamp(28px,4.5vh,46px) 0;border-bottom:1px solid var(--line)}
+.card .n{font-family:var(--mono);font-size:12px;color:var(--ember);letter-spacing:.14em;padding-top:10px}
+.card h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.8vw,36px);line-height:1.12;margin-bottom:12px;transition:color .3s}
+.card:hover h2{color:var(--ember-hi)}
+.card p{color:var(--muted);font-size:15px;max-width:64ch}
+.card .meta{margin-top:14px;color:var(--dim)}
+.footer{border-top:1px solid var(--line);padding:26px 0 34px}
+.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--dim)}
+.footer a:hover{color:var(--bone)}
+@media(max-width:700px){.card{grid-template-columns:1fr}.nav-links a:not(.cta){display:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand-name" href="index.html">C<svg class="oo" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" fill="none" stroke="#EAE7DE" stroke-width="3.4"/><rect x="14" y="14" width="11" height="11" fill="#E68A2E"/></svg>REHOLD</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html">Studio</a>
+    <a href="faq.html">FAQ</a>
+    <a href="index.html#auditor">Run your numbers</a>
+    <a class="cta" href="index.html#contact">Begin an audit</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <div class="head">
+    <div class="eyebrow mono"><span class="tick"></span><span>Field Notes — Corehold, Dubai</span></div>
+    <h1>Honest notes from the <em>ownership</em> side of software.</h1>
+    <p class="lede">What business systems really cost, when custom software beats SaaS, and when AI actually pays off — written by the studio that builds owned infrastructure, with no tool to sell you a subscription for.</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="rented-stack-cost.html">
+      <span class="n">FN.01</span>
+      <div>
+        <h2>The real cost of renting your software stack: a UAE business breakdown</h2>
+        <p>A mid-size company's typical subscription stack, priced line by line — and what five years of renting actually buys: nothing. The math your accountant hasn't shown you.</p>
+        <span class="meta mono">8 min read · Cost of ownership</span>
+      </div>
+    </a>
+    <a class="card" href="custom-software-vs-saas.html">
+      <span class="n">FN.02</span>
+      <div>
+        <h2>Custom software vs. SaaS: when owning beats renting — and when it doesn't</h2>
+        <p>An honest decision framework from a studio that builds custom systems: the five situations where SaaS is genuinely the right call, and the five where it quietly bleeds you.</p>
+        <span class="meta mono">9 min read · Decision framework</span>
+      </div>
+    </a>
+    <a class="card" href="does-your-business-need-ai.html">
+      <span class="n">FN.03</span>
+      <div>
+        <h2>Does your business actually need AI? An honest framework</h2>
+        <p>Most companies are buying AI subscriptions the way they once bought gym memberships. Where AI genuinely compounds inside a business, where it's theater — and how to tell before you spend.</p>
+        <span class="meta mono">7 min read · Intelligent systems</span>
+      </div>
+    </a>
+  </div>
+</main>
+
+<footer class="footer"><div class="wrap footer-inner">
+  <span class="mono">© 2026 Corehold — Intelligent Systems Studio, Dubai</span>
+  <span class="mono"><a href="index.html">Studio</a> · <a href="faq.html">FAQ</a> · <a href="index.html#contact">Contact</a></span>
+</div></footer>
+</body>
+</html>
